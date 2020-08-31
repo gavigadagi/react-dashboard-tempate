@@ -1,0 +1,14 @@
+@import '../../../scss/variables';
+
+.footer {
+    height: 40px;
+    background: #fff;
+    align-self: end;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #c8c3fa;;
+    .copyright {
+        margin: 0 0 0 1rem;
+        font-size: 12px;
+    }
+}

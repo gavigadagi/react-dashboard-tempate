@@ -1,0 +1,32 @@
+@import "../../../scss/variables";
+
+.charts {
+
+    .charts-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-auto-flow: dense;
+        grid-gap: 1rem;
+    }
+
+    .center-demo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .p-col-d {
+        display: table-cell;
+    }
+    .p-col-m {
+        display: none;
+    }
+    @media screen and (max-width: 1024px) {
+        .p-col-d {
+            display: none;
+        }
+        .p-col-m {
+            display: inline-block;
+        }
+    }
+
+}

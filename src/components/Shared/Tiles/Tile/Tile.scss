@@ -1,0 +1,57 @@
+@import  './../../../../scss/variables';
+@import  './../../../../scss/mixins';
+
+.tile {
+    display: flex;
+    box-shadow: 0px 0px 3px 1px #c2bdf1;
+    margin: 10px auto;
+
+    .tile-left-section {
+        width: 120px;
+        margin: 10px;
+        padding-right: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        border-right: 1px solid #c2bdf1;
+        .icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 1px solid #8c81ed;
+            color: lightpink;
+            svg {
+                font-size: 2rem;
+                margin: 6px 10px;
+            }
+        }
+    }
+
+    .tile-body{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0 1rem;
+
+        .tile-header, .tile-footer {
+            height: 40px;
+        }
+        .tile-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .header-actions {
+                svg {
+                    margin: 0 0.5rem;
+                    color: #9a9a9a;
+                    cursor: pointer;
+                }
+            }
+        }
+        .tile-footer {
+            display: flex;
+            align-items: center;
+        }
+    }
+}

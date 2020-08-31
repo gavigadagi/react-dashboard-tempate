@@ -1,0 +1,105 @@
+@import '../../../scss/variables';
+
+.sidebar {
+    height: 100vh;
+    background: $primaryColor;
+
+    .brand {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        border-bottom: 1px solid #6c60d3;
+        .logo {
+            height: 48px;
+        }
+        .brand-name {
+            font-size: 30px;
+            margin: 0;
+            color: #fff;
+        }
+    }
+
+    .menu-items {
+        .sidebar-list-items {
+            .sidebar-list-item {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                color: #fff;
+                border-bottom: 1px solid #6c60d3;
+                &:hover {
+                    border-left: 3px solid #fff;
+                    background: #7064d5;
+                }
+                a {
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+                div {
+                    width: 100%;
+                    margin: 0.725rem;
+                    .link-icon {
+                        width: 30px;
+                        color: #fff;
+                    }
+                    .link-text {
+                        color: #fff;
+                        margin-left: 1rem;
+                        @media (max-width: 700px) {
+                            margin-left: 0;
+                        }
+                        &:hover {
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// Extra large devices (large desktops, 1200px and up)
+@media (max-width: 1200px) {  }
+
+// Large devices (desktops, 992px and up)
+@media (max-width: 992px) {  }
+
+
+// Medium devices (tablets, 768px and up)
+@media (max-width: 768px) {
+    .sidebar {
+        .brand {
+            justify-content: center;
+        }
+        .link-text {
+            margin-left: 0;
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 576px) {  
+    .sidebar {
+        .brand {
+            .brand-name {
+                display: none;
+            }
+        }
+        .menu-items {
+            .sidebar-list-items {
+                
+                .sidebar-list-item {
+                    div {
+                        margin: 0 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
