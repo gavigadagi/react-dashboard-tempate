@@ -1,0 +1,2 @@
+(this["webpackJsonpserver-side-rednder-react-app"]=this["webpackJsonpserver-side-rednder-react-app"]||[]).push([[9],{128:function(e,r,a){"use strict";a.r(r);var n=a(0),s=a.n(n);r.default=function(e){return s.a.createElement("div",{className:"app flex-row align-items-center"},"Login page")}}}]);
+//# sourceMappingURL=9.16762503.chunk.js.map

@@ -1,0 +1,2 @@
+.charts .charts-container{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));grid-auto-flow:dense;grid-gap:1rem}.charts .center-demo{display:flex;flex-direction:column;align-items:center}.charts .p-col-d{display:table-cell}.charts .p-col-m{display:none}@media screen and (max-width:1024px){.charts .p-col-d{display:none}.charts .p-col-m{display:inline-block}}
+/*# sourceMappingURL=7.847722a2.chunk.css.map */
